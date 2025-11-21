@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Token</title>
+</head>
+<body>
+    <h1>Token tozalash</h1>
+    <button onclick="clearToken()">Tokenni tozalash</button>
+    <p id="result"></p>
+
+    <script>
+        function clearToken() {
+            localStorage.removeItem('token');
+            document.getElementById('result').innerHTML = 'Token tozalandi! Endi hisobot sahifasini sinab ko\'ring.';
+            console.log('Token cleared from localStorage');
+        }
+        
+        // Sahifa ochilganda tokenni ko'rsatish
+        window.onload = function() {
+            const token = localStorage.getItem('token');
+            if (token) {
+                document.getElementById('result').innerHTML = 'Hozirda token mavjud: ' + token.substring(0, 20) + '...';
+            } else {
+                document.getElementById('result').innerHTML = 'Token mavjud emas';
+            }
+        }
+    </script>
+</body>
+</html>

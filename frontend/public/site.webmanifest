@@ -1,0 +1,10 @@
+{
+  "name": "Rentacloud",
+  "short_name": "Rentacloud",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#5b8cff",
+  "icons": []
+}

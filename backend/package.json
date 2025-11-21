@@ -1,0 +1,57 @@
+{
+  "name": "rentacloud-backend",
+  "version": "1.0.0",
+  "description": "Rentacloud - Ijara Boshqaruv Tizimi Backend API",
+  "main": "src/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "prod": "node src/index.js",
+    "seed": "node src/scripts/seedUser.js",
+    "seed-admin": "node src/scripts/seedShoxruxUser.js",
+    "seed-products": "node src/scripts/seedProducts.js",
+    "init-db": "node src/scripts/initDatabase.js",
+    "backup": "bash ../scripts/backup-database.sh",
+    "restore": "bash ../scripts/restore-database.sh",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Linting not configured\"",
+    "validate": "node -c src/index.js"
+  },
+  "keywords": [
+    "rental",
+    "management",
+    "api",
+    "nodejs",
+    "express",
+    "mongodb",
+    "ijara",
+    "rentacloud"
+  ],
+  "author": "ProX Development Team",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahmudjon366/rentacloud.git"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.2",
+    "morgan": "^1.10.1",
+    "rentacloud": "file:.."
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.2.3",
+    "nodemon": "^3.1.10"
+  }
+}

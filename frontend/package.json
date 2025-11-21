@@ -1,0 +1,50 @@
+{
+  "name": "rentacloud-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Rentacloud - Ijara Boshqaruv Tizimi Frontend",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5173",
+    "start": "vite preview --port 5173",
+    "build:prod": "NODE_ENV=production vite build",
+    "serve": "vite preview",
+    "lint": "echo \"Linting not configured\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rental",
+    "management",
+    "frontend",
+    "react",
+    "vite",
+    "ijara",
+    "rentacloud"
+  ],
+  "author": "ProX Development Team",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahmudjon366/rentacloud.git"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.544.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.26.2",
+    "rentacloud": "file:.."
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0",
+    "vite-plugin-pwa": "^1.0.3"
+  }
+}

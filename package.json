@@ -1,0 +1,49 @@
+{
+  "name": "rentacloud",
+  "version": "1.0.0",
+  "description": "Rentacloud - Ijara Boshqaruv Tizimi. Asbob-uskunalarni ijaraga berish va daromadni hisoblash uchun zamonaviy web aplikatsiya.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start": "npm run start --prefix backend",
+    "start:prod": "NODE_ENV=production npm run start --prefix backend",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "build:prod": "npm run build:prod --prefix frontend",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "clean": "npm run clean --prefix frontend && npm run clean --prefix backend",
+    "seed": "npm run seed --prefix backend",
+    "seed-admin": "npm run seed-admin --prefix backend",
+    "validate": "npm run validate --prefix backend",
+    "preview": "npm run preview --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahmudjon366/rentacloud.git"
+  },
+  "keywords": [
+    "rental",
+    "management",
+    "system",
+    "ijara",
+    "boshqaruv",
+    "tizimi",
+    "nodejs",
+    "react",
+    "mongodb",
+    "express",
+    "vite"
+  ],
+  "author": "ProX Development Team <support@rentacloud.uz>",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/mahmudjon366/rentacloud/issues"
+  },
+  "homepage": "https://github.com/mahmudjon366/rentacloud#readme"
+}
